@@ -1,4 +1,9 @@
 # Starter pipeline
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'c:\1\pokus.txt'
+    Contents: '**'
+    TargetFolder: 'c:\2'
 - task: KubernetesManifest@1
   inputs:
     action: 'deploy'
